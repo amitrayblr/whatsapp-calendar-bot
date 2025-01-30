@@ -10,24 +10,6 @@ A simple bot that reads your calendar using Calendar API and messages you throug
    - Verifies a webhook endpoint for WhatsApp.  
    - Receives incoming messages and sends responses dynamically (e.g., “Send me the schedule”).
 
-## Installation
-
-1. **Open a terminal/command prompt** on your machine.
-2. **Navigate** to the directory where you want the project files to live.
-3. **Run** the following command to clone the repository.
-
-``` 
-git clone https://github.com/amitrayblr/whatsapp-calendar-bot.git
-cd whatsapp-calendar-bot
-```
-
-4. **Ensure** you have Node.js (v14+ recommended) and npm (v6+) installed on your system.
-5. **Install** the projects dependencies by running.
-
-```
-npm install
-```
-
 ## Credentials for This Project
 
 This project requires **two main sets of credentials**:
@@ -121,11 +103,27 @@ Below are step-by-step instructions on how to acquire each.
    - Auto-generated when first authorizing the Google Calendar API.  
    - Also keep this private, typically in the `config/` folder.
 
+## Installation
+
+1. **Open a terminal/command prompt** on your machine.
+2. **Navigate** to the directory where you want the project files to live.
+3. **Run** the following command to clone the repository.
+
+``` 
+git clone https://github.com/amitrayblr/whatsapp-calendar-bot.git
+cd whatsapp-calendar-bot
+```
+
+4. **Ensure** you have Node.js (v14+ recommended) and npm (v6+) installed on your system.
+5. **Install** the projects dependencies by running.
+
+```
+npm install
+```
+
 ## Running the Project
-  - Run the project by
-  ```
-  npm run dev
-  ```
-  **First-Time Run**  
-   - When the project runs, it may ask you to **authorize** access by opening a Google consent screen.  
-   - Upon approval, a `token.json` file is generated (stored in `config/` or another location in your app). This file grants ongoing access without re-prompting.
+1. **Run** the project by
+```
+npm run dev
+```
+2. When the project runs for the **first** time, it may ask you to **authorize** access by opening a Google consent screen. Upon approval, a `token.json` file is generated (stored in `config/` or another location in your app). This file grants ongoing access without re-prompting.
