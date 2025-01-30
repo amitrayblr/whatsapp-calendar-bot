@@ -80,8 +80,9 @@ Below are step-by-step instructions on how to acquire each.
    - **`WHATSAPP_BUSINESS_ACCOUNT_ID`** (optional depending on your code, but often needed).
 
 7. **Set up Verify Token** (for Webhook Verification)  
-   - In the WhatsApp developer settings, you can configure your callback URL (e.g., `https://<your-domain>/webhook`) and provide a custom **Verify Token**.  
+   - In the WhatsApp developer settings, you can configure your callback URL (e.g., `https://<your-domain>/api/webhook`) and provide a custom **Verify Token**.  
    - Ensure it matches **`VERIFY_TOKEN`** in your `.env` for the `GET /webhook` verification flow.
+   - If you don't have your own domain, you can expose your localhost server port using ngrok
 
 ### 3. Storing and Using Your Credentials
 
@@ -114,7 +115,7 @@ git clone https://github.com/amitrayblr/whatsapp-calendar-bot.git
 cd whatsapp-calendar-bot
 ```
 
-4. **Ensure** you have Node.js (v14+ recommended) and npm (v6+) installed on your system.
+4. **Ensure** you have Node.js (v16+ recommended) and npm (v8+) installed on your system.
 5. **Install** the projects dependencies by running.
 
 ```
@@ -127,3 +128,4 @@ npm install
 npm run dev
 ```
 2. When the project runs for the **first** time, it may ask you to **authorize** access by opening a Google consent screen. Upon approval, a `token.json` file is generated (stored in `config/` or another location in your app). This file grants ongoing access without re-prompting.
+3. You can **verify** the meta webhook after the server is running
