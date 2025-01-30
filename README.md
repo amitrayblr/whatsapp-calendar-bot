@@ -69,10 +69,6 @@ Below are step-by-step instructions on how to acquire each.
    - Rename or keep it as `credentials.json` and place it in your project’s `config/` folder (or wherever your code expects it).  
    - **Note:** Keep this file private—never commit it to version control.
 
-7. **First-Time Run**  
-   - When the project runs, it may ask you to **authorize** access by opening a Google consent screen.  
-   - Upon approval, a `token.json` file is generated (stored in `config/` or another location in your app). This file grants ongoing access without re-prompting.
-
 ---
 
 ### 2. WhatsApp Cloud API Credentials
@@ -130,3 +126,6 @@ Below are step-by-step instructions on how to acquire each.
   ```
   npm run dev
   ```
+  **First-Time Run**  
+   - When the project runs, it may ask you to **authorize** access by opening a Google consent screen.  
+   - Upon approval, a `token.json` file is generated (stored in `config/` or another location in your app). This file grants ongoing access without re-prompting.
